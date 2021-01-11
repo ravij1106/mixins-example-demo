@@ -14,6 +14,16 @@ export default new Router({
             path: '/Home',
             name: 'Home',
             component: () => import("./components/Home")
+        },
+        {
+            path: '/Login',
+            name: 'Login',
+            component: () => import("./components/Login")
+        },
+        {
+            path: '/Signup',
+            name: 'Signup',
+            component: () => import("./components/SignUp")
         }
     ]
 })
