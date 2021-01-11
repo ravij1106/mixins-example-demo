@@ -13,6 +13,10 @@
       Show title
     </button>
     <p>This is newly added text</p>
+    <br/>
+    <button @click="goHome()">
+      Home
+    </button>
   </div>
 </template>
 
@@ -23,8 +27,16 @@ import mixin from '../mixins/mixin'
 export default {
   name: 'HelloWorld',
   mixins: [mixin],
-  props: {
-    msg: String
+  data() {
+    return {
+      msg: "Hello world"
+    }
+  },
+  methods : {
+    goHome(){
+      //debugger; // eslint-disable-line no-debugger
+      this.$router.push({ name: "Home" });
+    }
   }
 }
 </script>
