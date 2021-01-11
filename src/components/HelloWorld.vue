@@ -4,9 +4,15 @@
     <button v-on:click="clicked('you just clicked on button 1')">
       Button 1
     </button>
+    &nbsp;&nbsp;&nbsp;
     <button v-on:click="clicked('you just clicked on button 2')">
       Button 2
     </button>
+    &nbsp;&nbsp;&nbsp;
+    <button v-on:click="showTitle()">
+      Show title
+    </button>
+    <p>This is newly added text</p>
   </div>
 </template>
 
