@@ -10,10 +10,11 @@
 <script>
 
 import mixin from '../mixins/mixin'
+import { formMixin } from '../mixins/my-mixin'
 
 export default {
   name: 'Home',
-  mixins: [mixin],
+  mixins: [mixin,formMixin],
   data() {
       return{
           text : 'Home page'

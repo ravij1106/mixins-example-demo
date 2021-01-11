@@ -17,6 +17,14 @@
     <button @click="goHome()">
       Home
     </button>
+    &nbsp;&nbsp;&nbsp;
+    <button @click="goLogin()">
+      Login
+    </button>
+    &nbsp;&nbsp;&nbsp;
+    <button @click="goSignUp()">
+      Signup
+    </button>
   </div>
 </template>
 
@@ -36,6 +44,12 @@ export default {
     goHome(){
       //debugger; // eslint-disable-line no-debugger
       this.$router.push({ name: "Home" });
+    },
+    goLogin(){
+      this.$router.push({ name: "Login" });
+    },
+    goSignUp(){
+      this.$router.push({ name: "Signup" });
     }
   }
 }
